@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+.pnp/
+.pnp.js
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Nuxt.js build output
+.nuxt/
+dist/
+
+# Static build output
+out/
+
+# Environment variables
+.env
+.env.*.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+node_modules/.bin/acorn
