@@ -1,6 +1,6 @@
 {
   "name": "nuxt-date-formatter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple Nuxt.js plugin to format dates",
   "main": "plugins/dateFormatter.ts",
   "scripts": {
