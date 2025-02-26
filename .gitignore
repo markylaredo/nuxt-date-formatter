@@ -31,3 +31,5 @@ out/
 *.sln
 *.sw?
 node_modules/.bin/acorn
+.nuxt
+.output
