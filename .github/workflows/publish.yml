@@ -8,13 +8,22 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [ 20 ]
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9.1.3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
         with:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
