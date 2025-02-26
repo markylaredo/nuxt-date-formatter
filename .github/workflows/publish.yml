@@ -20,7 +20,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install pnpm
-        run: npm install -g pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8 # Specify a version or remove for latest
 
       - name: Verify pnpm installation
         run: pnpm --version
