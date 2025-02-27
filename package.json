@@ -3,6 +3,10 @@
   "version": "1.0.2",
   "description": "A simple Nuxt.js plugin to format dates",
   "main": "plugins/dateFormatter.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markylaredo/nuxt-date-formatter"
+  },
   "scripts": {
     "build": "nuxt build",
     "start": "nuxt start",
