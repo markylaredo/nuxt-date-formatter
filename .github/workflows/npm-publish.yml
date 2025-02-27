@@ -4,9 +4,12 @@
 name: Node.js Package
 
 on:
-   push:
-      tags:
-        - 'v*.*.*'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  release:
+    types: [created]
 
 jobs:
   build:
