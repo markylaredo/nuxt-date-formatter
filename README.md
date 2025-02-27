@@ -1,8 +1,7 @@
+# **Note: This is a demo plugin.**
 # Nuxt Date Formatter
 
 A simple Nuxt.js plugin to format dates.
-
-**Note: This is a demo plugin.**
 
 ## Installation
 
